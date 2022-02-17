@@ -1,25 +1,23 @@
 import Media from "react-media";
 
-import SingUpForm from "../../components/signupForm/signupForm";
-import sprite from "../../icons/sprite.svg";
-import { ReactComponent as MainIcon } from "../../icons/signupMainIcon.svg";
+import RegisterForm from "../../components/registerForm/registerForm";
+import { ReactComponent as MainIcon } from "../../images/signupMainIcon.svg";
+import { ReactComponent as WalletLogo } from "../../images/walletLogo.svg";
 
-import s from "./signupView.module.css";
+import s from "./registerView.module.css";
 
-export default function SingUpView() {
+export default function RegisterView() {
   return (
     <Media query={{ maxWidth: 767 }}>
       {(matches) =>
         matches ? (
           <div className={s.formWrapper}>
-            <svg className={s.logo}>
-              <use href={sprite + "#icon-wallet"}></use>
-            </svg>
+            <WalletLogo className={s.logo} />
 
-            <SingUpForm />
+            <RegisterForm />
           </div>
         ) : (
-          <div className={s.signupPage}>
+          <div className={s.registerPage}>
             <div className={s.ellipseOrange}></div>
 
             <div className={s.ellipseViolet}></div>
@@ -33,11 +31,9 @@ export default function SingUpView() {
 
               <div className={s.parentFormWrapper}>
                 <div className={s.formWrapper}>
-                  <svg className={s.logo}>
-                    <use href={sprite + "#icon-wallet"}></use>
-                  </svg>
+                  <WalletLogo className={s.logo} />
 
-                  <SingUpForm />
+                  <RegisterForm />
                 </div>
               </div>
             </div>

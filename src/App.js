@@ -1,10 +1,12 @@
-import SignUpView from "./views/signupView";
+import RegisterView from "./views/registerView";
+import LoginView from "./views/loginView";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <SignUpView />
+      {/* <RegisterView /> */}
+      <LoginView />
     </div>
   );
 }

@@ -4,10 +4,8 @@
   width: 320px;
   height: 568px;
   margin: 0 auto;
-  z-index: 1;
 
   background-color: #ffffff;
-  /* border: 1px solid #000000; */
 }
 
 .logo {
@@ -16,17 +14,17 @@
   margin: 36px auto 50px;
 }
 
-.signupPage {
+.registerPage {
   position: relative;
   height: inherit;
-  background-color: #e7eaf2;
+  background-color: var(--bgc-modal-tablet);
 }
 
 @media screen and (min-width: 768px) {
   .formWrapper {
+    position: relative;
     width: 540px;
     height: 616px;
-    position: relative;
 
     border-radius: 20px;
   }
@@ -40,15 +38,15 @@
 
 @media screen and (min-width: 1280px) {
   .parentFormWrapper {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 720px;
     height: 720px;
     margin-left: auto;
-  }
-  .formWrapper {
-    margin: auto;
+
+    background-color: var(--bgc-color);
   }
 }
 
@@ -60,7 +58,6 @@
 
 .titleWrapper {
   display: flex;
-  position: relative;
 }
 
 .mainIcon {
@@ -76,7 +73,7 @@
   position: relative;
   align-self: center;
   margin-left: 56px;
-  /* font-family: Poppins; */
+
   font-size: 30px;
   font-weight: 400;
   line-height: 1.5;
@@ -100,8 +97,8 @@
 }
 
 .ellipseViolet {
-  display: block;
   position: absolute;
+  display: block;
   width: 490px;
   height: 330px;
   bottom: 0;
@@ -111,8 +108,8 @@
 }
 
 .ellipseOrange {
-  display: block;
   position: absolute;
+  display: block;
   width: 350px;
   height: 390px;
   top: 0;
