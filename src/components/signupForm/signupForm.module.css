@@ -1,0 +1,79 @@
+.field {
+  display: flex;
+  margin: 0 20px 40px;
+  width: 280px;
+  height: 34px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+@media screen and (min-width: 768px) {
+  .field {
+    margin: 0 65px 40px;
+    width: 410px;
+  }
+}
+
+.icon {
+  margin: auto 22px auto 12px;
+  width: 20px;
+  height: 20px;
+  color: #e0e0e0;
+}
+
+@media screen and (min-width: 768px) {
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.input {
+  font-family: Circe;
+  font-size: 18px;
+  /* font-weight: 400; */
+  line-height: 1.47;
+  border: none;
+}
+
+.btn {
+  display: block;
+  width: 280px;
+  height: 50px;
+  margin: 0 auto 20px;
+
+  font-family: Circe;
+  /* font-weight: 400; */
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: uppercase;
+
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    width: 300px;
+  }
+}
+
+.signUpBtn {
+  color: #ffffff;
+
+  background-color: #24cca7;
+  border: transparent;
+}
+
+.logInBtn {
+  color: #4a56e2;
+
+  background-color: #ffffff;
+  border: solid 1px #4a56e2;
+}
+
+.logInBtn:hover,
+.logInBtn:focus {
+  color: #ffffff;
+
+  background-color: #24cca7;
+  border: transparent;
+}

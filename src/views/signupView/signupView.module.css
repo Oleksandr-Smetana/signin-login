@@ -1,0 +1,123 @@
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 568px;
+  margin: 0 auto;
+  z-index: 1;
+
+  background-color: #ffffff;
+  /* border: 1px solid #000000; */
+}
+
+.logo {
+  width: 120px;
+  height: 30px;
+  margin: 36px auto 50px;
+}
+
+.signupPage {
+  position: relative;
+  height: inherit;
+  background-color: #e7eaf2;
+}
+
+@media screen and (min-width: 768px) {
+  .formWrapper {
+    width: 540px;
+    height: 616px;
+    position: relative;
+
+    border-radius: 20px;
+  }
+
+  .logo {
+    width: 180px;
+    height: 40px;
+    margin: 40px auto 50px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .parentFormWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 720px;
+    height: 720px;
+    margin-left: auto;
+  }
+  .formWrapper {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .mainWrapper {
+    display: flex;
+  }
+}
+
+.titleWrapper {
+  display: flex;
+  position: relative;
+}
+
+.mainIcon {
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  margin-left: 114px;
+  width: 274px;
+  height: 250px;
+}
+
+.title {
+  position: relative;
+  align-self: center;
+  margin-left: 56px;
+  /* font-family: Poppins; */
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1280px) {
+  .titleWrapper {
+    display: block;
+  }
+  .mainIcon {
+    margin-top: 154px;
+    margin-bottom: 32px;
+    margin-left: 66px;
+    width: 452px;
+    height: 412px;
+  }
+  .title {
+    align-self: normal;
+    margin-left: 200px;
+  }
+}
+
+.ellipseViolet {
+  display: block;
+  position: absolute;
+  width: 490px;
+  height: 330px;
+  bottom: 0;
+  left: 0;
+  background-image: url("../../icons/ellipse-violet.png");
+  background-size: cover;
+}
+
+.ellipseOrange {
+  display: block;
+  position: absolute;
+  width: 350px;
+  height: 390px;
+  top: 0;
+  right: 0;
+
+  background-image: url("../../icons/ellipse-orange.png");
+  background-size: cover;
+}
