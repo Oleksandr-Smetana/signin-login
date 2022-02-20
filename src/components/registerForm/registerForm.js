@@ -1,6 +1,8 @@
 import { useDispatch } from "react-redux";
 import { useFormik } from "formik";
 import * as yup from "yup";
+import ProgressBar from "@ramonak/react-progress-bar";
+
 import { MdEmail, MdLock, MdAccountBox } from "react-icons/md";
 import s from "./registerForm.module.css";
 
@@ -33,7 +35,6 @@ export default function RegisterForm() {
     validationSchema,
     onSubmit: (values, { resetForm }) => {
       console.log(JSON.stringify(values, null, 2));
-      console.log(handleSubmit);
       // dispatch(register({ name, email, password }));
       resetForm();
     },
@@ -50,8 +51,12 @@ export default function RegisterForm() {
     handleBlur,
   } = formik;
 
+  const fn = (cpsd) => cpsd.length.toString();
+  const fn2 = (cpsd) => cpsd.length.toString();
+
   console.log("isValid && !dirty: ", isValid && !dirty);
   // console.log("formik: ", formik);
+  // console.log(fn);
 
   return (
     <form className={"registerForm"} onSubmit={handleSubmit}>
@@ -106,6 +111,20 @@ export default function RegisterForm() {
         <p className={s.notification}>{errors.confirmPassword}</p>
       )}
 
+      {values.confirmPassword && (
+        <ProgressBar
+          className={s.progressBar}
+          completed={fn(values.confirmPassword)}
+          bgColor="#00ff16"
+          height="2px"
+          borderRadius="10%"
+          isLabelVisible={false}
+          baseBgColor="#f40d0d"
+          labelColor="#11ff40"
+          maxCompleted={fn2(values.password)}
+        />
+      )}
+
       <label htmlFor={"name"} className={s.field}>
         <MdAccountBox className={s.icon} />
         <input
@@ -124,7 +143,7 @@ export default function RegisterForm() {
       )}
 
       <button
-        disable={isValid && !dirty}
+        disable={(isValid && !dirty).toString()}
         type="submit"
         className={s.registerBtn + " " + s.btn}
       >

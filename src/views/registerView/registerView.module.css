@@ -103,7 +103,7 @@
   height: 330px;
   bottom: 0;
   left: 0;
-  background-image: url("../../icons/ellipse-violet.png");
+  background-image: url("../../images/ellipse-violet.png");
   background-size: cover;
 }
 
@@ -115,6 +115,6 @@
   top: 0;
   right: 0;
 
-  background-image: url("../../icons/ellipse-orange.png");
+  background-image: url("../../images/ellipse-orange.png");
   background-size: cover;
 }

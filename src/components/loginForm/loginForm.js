@@ -81,7 +81,7 @@ export default function LoginForm() {
       )}
 
       <button
-        disable={isValid && !dirty}
+        disable={(isValid && !dirty).toString()}
         type={"submit"}
         className={[s.logInBtn, s.btn].join(" ")}
       >
